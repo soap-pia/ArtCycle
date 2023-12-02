@@ -1,0 +1,733 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #FFFDDB;
+}
+/*Navbar: header, logo, text, button display*/
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #FFFDDB;
+}
+
+.logo {
+    cursor: pointer;
+    height: 75px;
+}
+
+li,a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:#5C4124;
+    text-decoration: none;
+}
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-bar li a {
+    display: inline-block;
+    background-color: #FFD7A7;
+    width: 120px;
+    padding-block: 7px;
+    border: 2px solid;
+    border-color: #FF9C9C;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/*Navbar: language drop-down*/
+.language-menu {
+    border: none;
+    color: #5C4124;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #FFFDDB;
+}
+
+/*Hero Section*/
+.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFDDB;
+    overflow: hidden;
+}
+
+.hero-box {
+    text-align: center;
+}
+.hero-container {
+    position: relative;
+    font-family:'Rubik Mono One', monospace;
+    font-weight: 400;
+    font-size: 40px;
+    color:#FF9C9C;
+}
+
+.hero-container .text.first-text{
+    color:#FF9C9C;
+}
+
+.text.sec-text:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFDDB;
+    border-left: 2px solid #FF9C9C;
+    animation: animate 4s steps(18) infinite;
+
+}
+@keyframes animate {
+    40%, 60%{
+        left: 100%
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.brand-desc {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+    padding: 20px;
+    color:#FF9C9C;
+}
+
+/*Recycling motto*/
+
+.motto {
+  border: outset;
+  border-top: 7px solid #CCFFAB;
+  border-left: 7px solid #CCFFAB;
+  border-right: 7px solid #CCFFAB;
+  border-bottom: 7px solid #CCFFAB;  
+  text-align: center;
+  margin-top: 0px;
+}
+
+.motto-text {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 16px;
+   color:#5C4124;
+   border: none;
+}
+
+/*About Artcycle - homepage and about page*/
+.about-container {
+    margin: 100px auto;
+    width: 75%;
+}
+
+.about-container h2 {
+    font-family: 'Rubik Mono One', monospace;
+    font-weight: 200;
+    font-size: 32px;
+    text-align: center;
+    color:#FF9C9C;
+}
+
+.brand-image {
+    max-width: 320px;
+    float: left;
+    margin-right: 40px;
+}
+
+.about-artcycle-content {
+    padding-bottom: 100px;
+}
+
+.about-artcycle-content h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color:#5C4124;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.about-artcycle-content p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color:#5C4124;
+    line-height: 22px;
+}
+
+/*About button - about page only*/
+.about-button {
+  cursor: pointer;
+  background-color: #FFD7A7;
+  width: 80px;
+  height: 80px;
+  margin: 4px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #5C4124;
+  position: relative;
+  top: 25px;
+  left: -10px;
+}
+
+.fa-long-arrow-right {
+    color: #FFFEC5;
+    font-size: 40px;
+    position: relative;
+    left: 0;
+    transition: left ease 0.5s;
+}
+
+.fa-long-arrow-right:hover {
+    left: 5px;
+}
+
+/*SDG Goal section in About page*/
+.sdg-goal {
+    background-color: #FFD7A7;
+    
+}
+.sdg-container {
+    margin: 100px auto;
+    width: 70%;
+    overflow: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.sdg-content {
+    width: 100%;
+}
+
+.sdg-container h2 {
+    font-family: 'Rubik Mono One', monospace;
+    font-weight: 200;
+    font-size: 32px;
+    text-align: center;
+    color:#FF9C9C;
+    padding-top: 10px;
+}
+
+.sdg-container img {
+    max-width: 250px;
+    float: left;
+    margin-right: 40px;
+}
+
+.sdg-content p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color:#5C4124;
+    padding-top: 30px;
+    line-height: 22px;
+}
+
+/*Waste Issue section in About page*/
+.issue-container {
+    margin: 100px auto;
+    width: 70%;
+    overflow: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.issue-container h2 {
+    font-family: 'Rubik Mono One', monospace;
+    font-weight: 200;
+    font-size: 32px;
+    text-align: center;
+    color:#FF9C9C;
+    padding-bottom: 20px;
+}
+
+.waste-vietnam, .waste-global {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.waste-vietnam, .waste-global h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color:#5C4124;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.waste-vietnam img {
+    max-width: 380px;
+    float: left;
+    margin-right: 40px;
+}
+
+.waste-global img {
+    max-width: 380px;
+    float: right;
+    margin-left: 40px;
+}
+
+.waste-vietnam p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color:#5C4124;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    line-height: 22px;
+}
+
+.waste-global p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color:#5C4124;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    line-height: 22px;
+}
+
+
+/*Service Section in Homepage*/
+.service-container {
+    margin: auto;
+    width: 75%;
+    padding-top: 50px;
+}
+
+.service-container h2 {
+    font-family: 'Rubik Mono One', monospace;
+    font-weight: 200;
+    font-size: 32px;
+    text-align: center;
+    color:#FF9C9C;
+}
+
+.slideshow {
+	position: relative;
+	overflow: hidden;
+	height: 550px;
+    width: auto;
+    border-radius: 20px;
+    border: 30px solid #FFFEC5;
+}
+
+.myslide {
+	position: absolute;
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+}
+
+.myslide img {
+    vertical-align: middle;
+    width: 100%;
+	height: 100%;
+    object-fit: cover;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.slide-text {
+    color: #5C4124;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .service-button {
+    cursor: pointer;
+    background-color: #FFD7A7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #5C4124;
+    position: absolute;
+    right: 335px;
+    bottom: 10px;
+    width: 30%;
+    height: 30px;
+    text-align: center;
+
+    border-radius: 10px;
+    border: 1px solid #5C4124;
+  }
+
+/*Recycling method in Service page*/
+  .recycle-method {
+    margin: auto;
+    width: 70%;
+    padding-top: 50px;
+}
+
+.recycle-method h2 {
+    font-family: 'Rubik Mono One', monospace;
+    font-weight: 200;
+    font-size: 32px;
+    text-align: center;
+    color:#FF9C9C;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.recycle-method img {
+    width: 400px;
+    height: 340px;
+    float: left;
+} 
+
+.rectangle {
+    display: flex;
+    width: 500px;
+    height: 260px;
+    background-color: #FFD7A7;
+    position: relative;
+    position: relative;
+    top: 25px;
+    left: -20px;
+
+}
+.recycle-method-content {
+    width: 100%;
+}
+
+.recycle-method-content h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color:#5C4124;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.recycle-method-content p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color:#5C4124; 
+    line-height: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Recycling material needed in Service page*/
+.recycle-material {
+    margin: auto;
+    width: 70%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.recycle-material h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color:#5C4124;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.material-container {
+    width: 100%;
+    display: flex;
+    flex: wrap;
+}
+
+.material-card {
+    background-color: #FFD7A7;
+    width: 220px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px #717171;
+    margin: 20px;
+}
+
+.material-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.material-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#5C4124;
+    padding: 15px;
+}
+
+.material-text h3 {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/*Recycled art in Service page*/
+.art {
+    background-color: #CCFFAB;
+}
+.recycle-art {
+    margin: auto;
+    width: 70%;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.recycle-art h2 {
+    font-family: 'Rubik Mono One', monospace;
+    font-weight: 200;
+    font-size: 32px;
+    text-align: center;
+    color:#FF9C9C;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.recycle-art p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:#5C4124;
+    padding-bottom: 30px;
+}
+
+.art-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-rows: repeat(2, 8vw);
+}
+
+.art-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  .art-card--one{
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .art-card--two {
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .art-card--three {
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+  }
+
+  .art-card--four {
+    grid-column: 1;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  }
+
+  .art-card--five {
+    grid-column: 2;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  }
+
+.survey-container {
+    margin: auto;
+    width: 70%;
+    padding-top: 100px;
+    padding-bottom: 180px;
+}
+
+.survey-container h2 {
+    font-family: 'Rubik Mono One', monospace;
+    font-weight: 200;
+    font-size: 32px;
+    text-align: center;
+    color:#FF9C9C;
+    padding-top: 10px;
+}
+
+.survey-container img {
+    height: 270px;
+    float: left;
+    margin-right: 30px;
+} 
+
+.survey-content p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color:#5C4124;
+    padding-top: 20px;
+    line-height: 22px;
+}
+
+.survey-button {
+    cursor: pointer;
+    width: 250px;
+    height: 70px;
+    background: #FFD7A7;
+    text-decoration:underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color:#5C4124;
+    border: 1px solid #5C4124;
+    border-radius: 15px;
+    
+    position: relative;
+    left: 110px;
+    bottom: -40px;
+}
+
+/*Contact - homepage and contact page*/
+.contact {
+    background-color: #CCFFAB;
+    overflow: auto;
+}
+
+.contact-container {
+    margin: 100px auto;
+    width: 70%;
+}
+
+.contact-container h2 {
+    font-family: 'Rubik Mono One', monospace;
+    font-weight: 200;
+    font-size: 32px;
+    text-align: center;
+    color:#FF9C9C;
+}
+
+.contactus-content {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.email-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.contactus-content p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color:#5C4124;
+    padding: 10px;
+}
+
+.communication-graphic {
+    width: 350px;
+    height: 280px;
+    float: right;
+    margin-left: 30px;
+}
+
+.contactus-content button {
+  background-color: #FFFEC5;
+  color: #5C4124;
+  font-weight: 700;
+  font-size: 16px;
+  width: 300px;
+  height: 60px;
+  margin: 4px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #5C4124;  
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 10%;
+    background-color: white;
+}
+
+.footer-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #5C4124;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.attribute {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #5C4124;
+    font-weight: 500;
+    font-size: 14px;    
+}
+
